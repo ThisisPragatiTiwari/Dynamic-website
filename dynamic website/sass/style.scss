@@ -1,0 +1,148 @@
+// html{
+//     width: 100%;
+// }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #16161F;
+    overflow-x: hidden;
+    margin-bottom: 30px;
+ 
+}
+.intro_div {
+    position: relative;
+    overflow: hidden;
+    background-image: url('./assests/Background_img.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.intro_div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust rgba values for different color and opacity */
+    z-index: 2; /* Ensure this is on top of the background image but behind content */
+}
+
+.intro_div > * {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the overlay */
+}
+
+h2{
+    color: wheat;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+
+.font_med{
+    color: wheat;
+        font-size: 20px;
+}
+
+
+.intro_div{
+    background-repeat: no-repeat;
+    max-height: 100%;
+    max-width: 100%;
+    padding-bottom: 30px;
+    a{
+        text-decoration: none;
+        color:white;
+        &:hover{
+            color: rgb(243, 166, 24);
+        }
+    }
+
+}
+
+.about_us{
+    color: white;
+    
+}
+
+.food_quality{
+    position: relative;
+color: aliceblue;
+    .fq_text{
+        height: 400px;
+        
+    }
+    .img1{
+        position: absolute;
+        right: -132px;
+        top: 0;
+    }
+
+}
+
+.food_gallery{
+   
+    row-gap: 20px;
+}
+
+
+.enjoy_food{
+    position: relative;
+    margin: 70px 0  ;
+    .ef_bg{
+        max-height: 1000px;
+    }
+    .food_text{
+        position: absolute;
+        top: 0;
+        width: 50%;
+        transform: translate(50%, 70%);
+        background-color: #181821;
+        border: 3px solid yellow;
+    }
+
+}
+
+.menu{
+    img{
+height: 350px;
+    }
+}
+
+.best_meal{
+    position: relative;
+    margin-bottom: 500px;
+    .yellow_bg{
+        background-color: #F89001;
+        position: absolute;
+        height: 360px;
+        width: 1400px;
+    }
+    img{
+position: absolute;
+    }
+    .meal_text{
+        position: absolute;
+        width: 50%;
+        right: 0;
+    }
+}
+
+footer{
+    a{
+        text-decoration: none;
+        color: wheat;
+        &:hover{
+            color: #F89001;
+        }
+    }
+
+    
+}
+.sm_icons{
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: wheat;
+}
